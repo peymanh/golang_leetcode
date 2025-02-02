@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	buyandsell "golang_leetcode/121_buy_and_sell"
+	lengthoflastword "golang_leetcode/58_length_of_last_word"
 )
 
 func main() {
-	nums1 := []int{7, 1, 5, 3, 6, 4}
-	profit := buyandsell.MaxProfit(nums1)
-	fmt.Println(profit)
+	s := "asd asdasdasdasd    asd   "
+	l := lengthoflastword.LengthOfLastWord(s)
+	fmt.Println(l)
 }
