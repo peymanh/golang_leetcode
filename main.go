@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	majorityelement "golang_leetcode/169_majority_element"
+	buyandsell "golang_leetcode/121_buy_and_sell"
 )
 
 func main() {
-	nums1 := []int{3, 2, 3, 2, 2, 2}
-	major := majorityelement.MajorityElement(nums1)
-	fmt.Println(major)
+	nums1 := []int{7, 1, 5, 3, 6, 4}
+	profit := buyandsell.MaxProfit(nums1)
+	fmt.Println(profit)
 }
