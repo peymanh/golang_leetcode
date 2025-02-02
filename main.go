@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	removeduplicatesortedarray "golang_leetcode/26_remove_duplicate_sorted_array"
+	majorityelement "golang_leetcode/169_majority_element"
 )
 
 func main() {
-	nums1 := []int{3, 2, 2, 3}
-	n := removeduplicatesortedarray.RemoveDuplicates(nums1)
-	fmt.Printf("result array: %v, occur: %+d\n", nums1, n)
+	nums1 := []int{3, 2, 3, 2, 2, 2}
+	major := majorityelement.MajorityElement(nums1)
+	fmt.Println(major)
 }
