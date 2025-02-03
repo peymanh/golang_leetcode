@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	ransomnote "golang_leetcode/383_ransom_note"
+	isomorphicstrings "golang_leetcode/205_isomorphic_strings"
 )
 
 func main() {
-	ransomNote := "aa"
-	magazine := "ab"
-	r := ransomnote.CanConstruct(ransomNote, magazine)
+	s := "paper"
+	t := "title"
+	r := isomorphicstrings.IsIsomorphic(s, t)
 	fmt.Println(r)
 }
