@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	validpalindrome "golang_leetcode/125_valid_palindrome"
+	ransomnote "golang_leetcode/383_ransom_note"
 )
 
 func main() {
-	s := "A man, a plan, a canal: Panama"
-	r := validpalindrome.IsPalindrome(s)
+	ransomNote := "aa"
+	magazine := "ab"
+	r := ransomnote.CanConstruct(ransomNote, magazine)
 	fmt.Println(r)
 }
