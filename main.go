@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	zigzagconversion "golang_leetcode/6_zigzag_conversion"
+	validpalindrome "golang_leetcode/125_valid_palindrome"
 )
 
 func main() {
-	s := "AB"
-	numRows := 1
-	r := zigzagconversion.Convert(s, numRows)
+	s := "A man, a plan, a canal: Panama"
+	r := validpalindrome.IsPalindrome(s)
 	fmt.Println(r)
 }
