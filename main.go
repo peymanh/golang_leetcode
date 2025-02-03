@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	isomorphicstrings "golang_leetcode/205_isomorphic_strings"
+	validanagram "golang_leetcode/242_valid_anagram"
 )
 
 func main() {
-	s := "paper"
-	t := "title"
-	r := isomorphicstrings.IsIsomorphic(s, t)
+	s := "abagram"
+	t := "nagaram"
+	r := validanagram.IsAnagram(s, t)
 	fmt.Println(r)
 }
