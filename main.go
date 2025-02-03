@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	reversewordsinastring "golang_leetcode/151_reverse_words_in_a_string"
+	zigzagconversion "golang_leetcode/6_zigzag_conversion"
 )
 
 func main() {
-	s := "a good   example"
-	r := reversewordsinastring.ReverseWords(s)
+	s := "AB"
+	numRows := 1
+	r := zigzagconversion.Convert(s, numRows)
 	fmt.Println(r)
 }
