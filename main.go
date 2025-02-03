@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	lengthoflastword "golang_leetcode/58_length_of_last_word"
+
+	longestcommonprefix "golang_leetcode/14_longest_common_prefix"
 )
 
 func main() {
-	s := "asd asdasdasdasd    asd   "
-	l := lengthoflastword.LengthOfLastWord(s)
-	fmt.Println(l)
+	strs := []string{"cir", "car"}
+	prefix := longestcommonprefix.LongestCommonPrefix(strs)
+	fmt.Println(prefix)
 }
