@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	indexoffirstoccurance "golang_leetcode/28_index_of_first_occurance"
+	reversewordsinastring "golang_leetcode/151_reverse_words_in_a_string"
 )
 
 func main() {
-	haystack, needle := "sdadbutsad", "sad"
-	r := indexoffirstoccurance.StrStr(haystack, needle)
+	s := "a good   example"
+	r := reversewordsinastring.ReverseWords(s)
 	fmt.Println(r)
 }
