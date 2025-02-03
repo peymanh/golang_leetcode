@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	longestcommonprefix "golang_leetcode/14_longest_common_prefix"
+	indexoffirstoccurance "golang_leetcode/28_index_of_first_occurance"
 )
 
 func main() {
-	strs := []string{"cir", "car"}
-	prefix := longestcommonprefix.LongestCommonPrefix(strs)
-	fmt.Println(prefix)
+	haystack, needle := "sdadbutsad", "sad"
+	r := indexoffirstoccurance.StrStr(haystack, needle)
+	fmt.Println(r)
 }
