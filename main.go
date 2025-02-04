@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	validanagram "golang_leetcode/242_valid_anagram"
+	twosum "golang_leetcode/1_two_sum"
 )
 
 func main() {
-	s := "abagram"
-	t := "nagaram"
-	r := validanagram.IsAnagram(s, t)
+	nums := []int{3, 2, 4}
+
+	r := twosum.TwoSum(nums, 4)
 	fmt.Println(r)
 }
