@@ -3,31 +3,41 @@ package main
 import (
 	"fmt"
 
-	linkedlistcycle "golang_leetcode/141_linked_list_cycle"
+	balancedbinarytree "golang_leetcode/110_balanced_binary_tree"
 )
 
 func main() {
-	l1 := linkedlistcycle.ListNode{
+	r1 := balancedbinarytree.TreeNode{
 		Val: 1,
 	}
-
-	l2 := linkedlistcycle.ListNode{
+	r2r := balancedbinarytree.TreeNode{
 		Val: 2,
 	}
+	// r2l := balancedbinarytree.TreeNode{
+	// 	Val: 2,
+	// }
+	// r3r := balancedbinarytree.TreeNode{
+	// 	Val: 3,
+	// }
+	// r3l := balancedbinarytree.TreeNode{
+	// 	Val: 3,
+	// }
+	// r4r := balancedbinarytree.TreeNode{
+	// 	Val: 4,
+	// }
+	// r4l := balancedbinarytree.TreeNode{
+	// 	Val: 4,
+	// }
 
-	l3 := linkedlistcycle.ListNode{
-		Val: 3,
-	}
+	r1.Right = &r2r
+	// r1.Left = &r2l
 
-	l4 := linkedlistcycle.ListNode{
-		Val: 4,
-	}
+	// r2l.Left = &r3l
+	// r2l.Right = &r3r
 
-	l1.Next = &l2
-	l2.Next = &l3
-	l3.Next = &l4
-	l4.Next = &l2
+	// r3l.Left = &r4l
+	// r3l.Right = &r4r
 
-	r := linkedlistcycle.HasCycle(&l1)
+	r := balancedbinarytree.IsBalanced(&r1)
 	fmt.Println(r)
 }
