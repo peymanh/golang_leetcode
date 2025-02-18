@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	findnumberdistinctcolor "golang_leetcode/3160_find_number_distinct_color"
+	rotatearray "golang_leetcode/189_rotate_array"
 )
 
 func main() {
-	limit := 4
-	queries := [][]int{{0, 1}, {1, 2}, {2, 2}, {3, 4}, {4, 5}}
+	nums := []int{1, 2, 3, 4, 5, 6, 7}
+	k := 3
 
-	r := findnumberdistinctcolor.QueryResults(limit, queries)
+	r := rotatearray.Rotate(nums, k)
 	fmt.Println(r)
 }
