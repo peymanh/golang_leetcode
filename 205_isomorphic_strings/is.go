@@ -1,41 +1,20 @@
 package isomorphicstrings
 
-import (
-	"slices"
-)
-
 func IsIsomorphic(s string, t string) bool {
-	s_map, t_map := make(map[byte]int), make(map[byte]int)
-
 	if len(s) != len(t) {
 		return false
 	}
+	s_map, t_map := [128]int{}, [128]int{}
 
 	for i := 0; i < len(s); i++ {
-		if _, ok := s_map[s[i]]; ok {
-			s_map[s[i]]++
-		} else {
-			s_map[s[i]] = 1
-		}
+		sCh, tCh := s[i], t[i]
 
-		if _, ok := t_map[t[i]]; ok {
-			t_map[t[i]]++
-		} else {
-			t_map[t[i]] = 1
+		if s_map[sCh] == 0 && t_map[tCh] == 0 {
+			s_map[sCh] = int(tCh)
+			t_map[tCh] = int(sCh)
+		} else if s_map[sCh] != int(tCh) || t_map[tCh] != int(sCh) {
+			return false
 		}
 	}
-
-	s_values, t_values := []int{}, []int{}
-	for _, value := range s_map {
-		s_values = append(s_values, value)
-	}
-
-	for _, value := range t_map {
-		t_values = append(t_values, value)
-	}
-
-	slices.Sort(s_values)
-	slices.Sort(t_values)
-
-	return slices.Equal(s_values, t_values)
+	return true
 }
