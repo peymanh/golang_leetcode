@@ -7,6 +7,9 @@ type TreeNode struct {
 }
 
 func sortedArrayToBST(nums []int) *TreeNode {
+	if len(nums) == 0 {
+		return nil
+	}
 	med := len(nums) / 2
 
 	root := TreeNode{
