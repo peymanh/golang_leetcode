@@ -1,6 +1,6 @@
 package jumpgame
 
-func canJump(nums []int) bool {
+func CanJump(nums []int) bool {
 	gas := 0
 
 	for _, n := range nums {
